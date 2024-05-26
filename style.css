@@ -6,7 +6,7 @@ body {
     position: relative;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,10 @@ h1, h2, p {
     bottom: 30px;
     left: 20px;
     
-}   
+}  
+.promo-image{
+    display: none;
+} 
 
 @media screen and (max-width: 550px) {
     .text-content {
@@ -88,6 +91,7 @@ h1, h2, p {
     }
     .promo-content{
         margin: 0 10px;
+        margin-top: 100px;
         
     }
     .exhibhited{
@@ -97,6 +101,18 @@ h1, h2, p {
         left: 20px;
         
     } 
+    .promo-image{
+        display: block;
+        width: 100%;
+        right: 30px;
+
+        position: absolute;
+        top: 7rem;
+    } 
+    .container{
+        /* background: url('crick1.png') no-repeat center c; */
+        height: 150vh;
+    }
     
   }
 
@@ -105,4 +121,5 @@ h1, h2, p {
         padding: 15px; 
         margin: 20px 0;      
     }
+    
   }
